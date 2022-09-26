@@ -1,12 +1,12 @@
 import React from 'react';
-import CTA from './components/cta';
-import Contact from './components/contact';
+import Header from './components/Header';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
   return (
     <div className="App bg-neutral-200 w-screen h-screen flex justify-center items-center relative">
-      <CTA />
+      <Header />
       <Contact />
     </div>
   );
