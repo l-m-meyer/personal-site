@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App bg-neutral-200 w-screen h-screen flex justify-center items-center">
+    <div className="App bg-neutral-200 w-screen h-screen flex justify-center items-center relative">
       <CTA />
       <Contact />
     </div>
