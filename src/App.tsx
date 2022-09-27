@@ -18,11 +18,11 @@ function App() {
       >
         <FontAwesomeIcon
           icon={solid('moon')}
-          className={`${darkToggle ? 'text-emerald-100' : ''}`}
+          className={`${darkToggle ? 'text-emerald-100' : 'text-emerald-900'}`}
         />
         <FontAwesomeIcon
           icon={solid('sun')}
-          className={`${darkToggle ? '' : 'text-emerald-100'}`}
+          className={`${darkToggle ? 'text-emerald-900' : 'text-emerald-100'}`}
         />
       </button>
       <div className='bg-neutral-200 dark:bg-emerald-900 w-screen h-screen flex justify-center items-center relative'>
