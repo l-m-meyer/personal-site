@@ -10,14 +10,14 @@ export default function Header() {
   return (
     <>
       <Avatar />
-      <div className="flex-col p-5">
+      <div className="flex-col p-5 text-emerald-900 dark:text-neutral-200">
         <h1
-          className="text-5xl font-bold text-emerald-900"
+          className="text-5xl font-bold "
         >
           Lisa Meyer
         </h1>
-        <h2 className="text-2xl text-emerald-900 py-2">Full Stack Web Developer</h2>
-        <h3 className="text-emerald-900">PERN Stack</h3>
+        <h2 className="text-2xl  py-2">Full Stack Web Developer</h2>
+        <h3>PERN Stack</h3>
       </div>
     </>
   );
