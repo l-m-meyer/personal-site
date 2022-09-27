@@ -26,7 +26,11 @@ function App() {
         />
       </button>
       <div className='bg-neutral-200 dark:bg-emerald-900 w-screen h-screen flex justify-center items-center relative'>
-        <Header />
+        <Header
+          name="Lisa Meyer"
+          title="Full Stack Web Developer"
+          stack="PERN"
+        />
         <Contact />
       </div>
     </div>

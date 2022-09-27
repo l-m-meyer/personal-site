@@ -6,7 +6,13 @@ function Avatar() {
   );
 }
 
-export default function Header() {
+interface HeaderProps {
+  name: string;
+  title: string;
+  stack: string;
+}
+
+export default function Header({name, title, stack}: HeaderProps) {
   return (
     <>
       <Avatar />
@@ -14,10 +20,10 @@ export default function Header() {
         <h1
           className="text-5xl font-bold "
         >
-          Lisa Meyer
+          {name}
         </h1>
-        <h2 className="text-2xl  py-2">Full Stack Web Developer</h2>
-        <h3>PERN Stack</h3>
+        <h2 className="text-2xl py-2">{title}</h2>
+        <h3>{stack} Stack</h3>
       </div>
     </>
   );
