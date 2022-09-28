@@ -2,17 +2,28 @@ import profile from '../data/lisa_profile.jpg';
 import SocialIcons from './SocialIcons';
 
 interface Props {
-  name: string;
+  name?: string;
   title?: string;
+  email?: string;
 }
 
 function Avatar({name}: Props) {
   return (
-    <img src={profile} alt="Lisa Meyer" className="h-40 rounded-full ml-2" />
+    <img src={profile} alt={name} className="h-40 rounded-full ml-2" />
   );
 }
 
-export default function Header({name, title}: Props) {
+function Contact({email}: Props) {
+  return (
+    <h5
+      className="mr-2 self-center fixed right-0 text-emerald-900 dark:text-neutral-200"
+      style={{ writingMode: "vertical-rl" }}>
+        {email}
+    </h5>
+  );
+};
+
+export default function Header({name, title, email}: Props) {
   return (
     <>
       <Avatar name={name} />
@@ -23,6 +34,7 @@ export default function Header({name, title}: Props) {
         <h2 className="text-2xl py-2">{title}</h2>
         <SocialIcons />
       </div>
+      <Contact email={email} />
     </>
   );
 };

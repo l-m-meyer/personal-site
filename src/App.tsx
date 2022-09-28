@@ -1,6 +1,6 @@
 import { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import Header from './components/Header';
-import Contact from './components/Contact';
 import ThemeToggle from './components/ThemeToggle';
 import './App.css';
 
@@ -17,8 +17,6 @@ function App() {
         <Header
           name="Lisa Meyer"
           title="Full Stack Web Developer"
-        />
-        <Contact
           email="lisamermey@gmail.com"
         />
       </section>
