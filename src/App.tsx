@@ -20,7 +20,6 @@ function App() {
         />
         <Contact
           email="lisamermey@gmail.com"
-          phone="647.973.5758"
         />
       </section>
     </div>
