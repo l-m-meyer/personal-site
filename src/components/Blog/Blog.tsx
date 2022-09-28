@@ -1,5 +1,5 @@
 export default function Blog(){
   return(
-    <section></section>
+    <section>Coming soon...</section>
   );
 };

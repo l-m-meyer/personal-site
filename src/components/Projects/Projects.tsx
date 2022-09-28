@@ -1,5 +1,5 @@
 export default function Projects(){
   return(
-    <section></section>
+    <section>Coming soon...</section>
   );
 };
