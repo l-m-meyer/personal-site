@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import Header from './components/Header';
+import Home from './components/Home';
 import ThemeToggle from './components/ThemeToggle';
+import Nav from './components/Nav';
 import './App.css';
+
 
 function App() {
   const [darkToggle, setDarkToggle] = useState(false);
@@ -13,13 +15,13 @@ function App() {
         darkToggle={darkToggle}
         setDarkToggle={setDarkToggle}
       />
-      <section className='bg-neutral-200 dark:bg-emerald-900 w-screen h-screen flex justify-center items-center relative'>
-        <Header
-          name="Lisa Meyer"
-          title="Full Stack Web Developer"
-          email="lisamermey@gmail.com"
-        />
-      </section>
+      <Nav />
+      <main className='bg-neutral-200 dark:bg-emerald-900 w-screen h-screen flex justify-center items-center relative'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="about" element={<About />} /> */}
+        </Routes>
+      </main>
     </div>
   );
 }
