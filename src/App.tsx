@@ -17,7 +17,6 @@ function App() {
         <Header
           name="Lisa Meyer"
           title="Full Stack Web Developer"
-          stack="PERN"
         />
         <Contact
           email="lisamermey@gmail.com"
