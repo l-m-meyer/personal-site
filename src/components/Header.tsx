@@ -8,7 +8,7 @@ interface Props {
 
 function Avatar({name}: Props) {
   return (
-    <img src={profile} alt="Lisa Meyer" className="h-40 rounded-full" />
+    <img src={profile} alt="Lisa Meyer" className="h-40 rounded-full ml-2" />
   );
 }
 
