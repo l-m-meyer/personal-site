@@ -1,9 +1,14 @@
-export default function Contact(){
+interface ContactProps {
+  email: string;
+  phone: string;
+}
+
+export default function Contact({email, phone}: ContactProps) {
   return (
     <h5
       className="mr-2 self-center fixed right-0 text-emerald-900 dark:text-neutral-200"
       style={{ writingMode: "vertical-rl" }}>
-      lisamermey@gmail.com | 647.973.5758
+      {email} | {phone}
     </h5>
   );
 };
