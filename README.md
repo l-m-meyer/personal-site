@@ -5,3 +5,9 @@ Lisa is a full stack web developer who enjoys both front-end and back-end projec
 While Lisa currently is most familiar with the PERN stack, she is open to learning new technologies.
 
 Feel free to visit the [https://lisameyer.dev](site)!
+
+## Technologies Used
+- TypeScript
+- React
+- TailwindCSS
+- React Router
