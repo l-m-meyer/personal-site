@@ -1,5 +1,7 @@
-export default function About(){
+import Blurb from "./Blurb";
+
+export default function About() {
   return (
-    <section>Coming soon...</section>
+    <Blurb />
   );
 };
